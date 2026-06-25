@@ -64,12 +64,12 @@ function CollectionDetail() {
         </Link>
         <div className="mt-8 grid gap-10 md:grid-cols-[1.1fr_1fr] md:gap-16">
           <div>
-            <p className="text-xs uppercase tracking-[0.32em] text-primary">{collection.season}</p>
+            {collection.season && <p className="text-xs uppercase tracking-[0.32em] text-primary">{collection.season}</p>}
             <h1 className="mt-4 font-display text-5xl leading-[1.02] text-foreground sm:text-6xl lg:text-7xl">
               {collection.title}
             </h1>
-            <p className="mt-5 font-display text-2xl italic text-muted-foreground">{collection.tagline}</p>
-            <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground">{collection.concept}</p>
+            {collection.tagline && <p className="mt-5 font-display text-2xl italic text-muted-foreground">{collection.tagline}</p>}
+            {collection.concept && <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground">{collection.concept}</p>}
           </div>
           <div className="relative">
             <div className="absolute -inset-4 -z-10 -rotate-2 rounded-[2rem] bg-petal/50" />
@@ -119,7 +119,7 @@ function CollectionDetail() {
                   />
                 </div>
                 <h3 className="mt-4 font-display text-2xl text-foreground group-hover:text-primary">{c.title}</h3>
-                <p className="text-sm uppercase tracking-[0.22em] text-muted-foreground">{c.season}</p>
+                {c.season && <p className="text-sm uppercase tracking-[0.22em] text-muted-foreground">{c.season}</p>}
               </Link>
             ))}
           </div>

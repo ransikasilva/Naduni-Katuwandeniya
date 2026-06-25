@@ -1,10 +1,25 @@
 import hero from "@/assets/hero.jpg";
-import look1 from "@/assets/look-1.jpg";
-import look2 from "@/assets/look-2.jpg";
-import look3 from "@/assets/look-3.jpg";
-import look4 from "@/assets/look-4.jpg";
-import look5 from "@/assets/look-5.jpg";
-import look6 from "@/assets/look-6.jpg";
+import portrait from "@/assets/portrait.jpg";
+import img1 from "@/assets/WhatsApp Image 2026-06-25 at 11.11.18.jpeg";
+import img2 from "@/assets/WhatsApp Image 2026-06-25 at 11.11.31.jpeg";
+import img3 from "@/assets/WhatsApp Image 2026-06-25 at 11.11.43.jpeg";
+import img4 from "@/assets/WhatsApp Image 2026-06-25 at 11.12.23.jpeg";
+import img5 from "@/assets/WhatsApp Image 2026-06-25 at 11.12.34.jpeg";
+import img6 from "@/assets/WhatsApp Image 2026-06-25 at 11.12.45.jpeg";
+import img7 from "@/assets/WhatsApp Image 2026-06-25 at 11.12.54.jpeg";
+import img8 from "@/assets/WhatsApp Image 2026-06-25 at 11.13.06.jpeg";
+import ds1 from "@/assets/DSC05211.jpg";
+import ds2 from "@/assets/DSC05221.jpg";
+import ds3 from "@/assets/DSC05240.jpg";
+import ds4 from "@/assets/DSC05258.jpg";
+import ds5 from "@/assets/DSC05263.jpg";
+import ds6 from "@/assets/DSC05275.jpg";
+import ds7 from "@/assets/DSC05283.jpg";
+import cfw1 from "@/assets/Copy of 1.jpg";
+import cfw2 from "@/assets/Copy of 2.jpg";
+import cfw3 from "@/assets/Copy of 3.jpg";
+import cfw5 from "@/assets/Copy of 5.jpg";
+import cfw10 from "@/assets/Copy of 10.jpg";
 
 export type Collection = {
   slug: string;
@@ -18,61 +33,71 @@ export type Collection = {
 
 export const collections: Collection[] = [
   {
-    slug: "in-bloom",
-    title: "In Bloom",
-    season: "Spring / Summer 2026",
-    tagline: "A reverie of first petals.",
-    concept:
-      "In Bloom is a meditation on awakening — the quiet moment a bud unfurls toward the morning sun. Hand-embroidered cherry blossom motifs drift across blush chiffon and silk organza, layered to catch the light like falling petals.",
-    cover: hero,
+    slug: "cfw-2021",
+    title: "CFW 2021",
+    season: "Colombo Fashion Week 2021",
+    tagline: "",
+    concept: "",
+    cover: img1,
     looks: [
-      { src: hero, alt: "Blush couture gown with floral embroidery" },
-      { src: look1, alt: "Pale pink chiffon dress in window light" },
-      { src: look2, alt: "Close-up of floral lace and pearl beadwork" },
-      { src: look4, alt: "Bridal gown beneath cherry blossoms" },
-      { src: look6, alt: "Cherry blossom and silk still life" },
+      { src: img1, alt: "CFW 2021 Collection" },
+      { src: img2, alt: "CFW 2021 Collection" },
+      { src: img3, alt: "CFW 2021 Collection" },
+      { src: img4, alt: "CFW 2021 Collection" },
+      { src: img5, alt: "CFW 2021 Collection" },
+      { src: img6, alt: "CFW 2021 Collection" },
+      { src: img7, alt: "CFW 2021 Collection" },
+      { src: img8, alt: "CFW 2021 Collection" },
     ],
   },
   {
-    slug: "petal-and-pearl",
-    title: "Petal & Pearl",
-    season: "Bridal 2025",
-    tagline: "Heirloom romance, rewritten.",
-    concept:
-      "An ode to the modern bride. Pearl-strewn bodices, hand-set lace, and skirts that move like breath. Petal & Pearl reimagines the bridal silhouette with a softness that lingers long after the vow.",
-    cover: look4,
+    slug: "sustainable-collection",
+    title: "Sustainable Collection",
+    season: "",
+    tagline: "",
+    concept: "",
+    cover: ds1,
     looks: [
-      { src: look4, alt: "Pale blush bridal gown in garden setting" },
-      { src: look2, alt: "Floral lace and pearl beadwork detail" },
-      { src: look1, alt: "Couture chiffon dress with embroidery" },
-      { src: look5, alt: "Atelier mannequin in soft pink silk" },
+      { src: ds1, alt: "Sustainable Collection" },
+      { src: ds2, alt: "Sustainable Collection" },
+      { src: ds3, alt: "Sustainable Collection" },
+      { src: ds4, alt: "Sustainable Collection" },
+      { src: ds5, alt: "Sustainable Collection" },
+      { src: ds6, alt: "Sustainable Collection" },
+      { src: ds7, alt: "Sustainable Collection" },
     ],
   },
   {
-    slug: "rose-couture",
-    title: "Rose Couture",
-    season: "Autumn / Winter 2025",
-    tagline: "The deeper hush of the garden.",
-    concept:
-      "Rose Couture turns toward the late garden — fuller blooms, richer color, slower silhouettes. Draped silk satin, sculptural ruffles, and the unmistakable weight of couture.",
-    cover: look3,
+    slug: "cfw-2026",
+    title: "CFW 2026",
+    season: "Colombo Fashion Week 2026",
+    tagline: "",
+    concept: "",
+    cover: cfw1,
     looks: [
-      { src: look3, alt: "Deep rose draped saree-gown with ruffles" },
-      { src: look5, alt: "Atelier studio with pink couture dress" },
-      { src: look6, alt: "Cherry blossoms on marble surface" },
-      { src: hero, alt: "Couture gown with floral embroidery" },
+      { src: cfw1, alt: "CFW 2026 Collection" },
+      { src: cfw2, alt: "CFW 2026 Collection" },
+      { src: cfw3, alt: "CFW 2026 Collection" },
+      { src: cfw5, alt: "CFW 2026 Collection" },
+      { src: cfw10, alt: "CFW 2026 Collection" },
     ],
   },
 ];
 
 export const allLooks = [
-  { src: hero, alt: "Couture blush gown" },
-  { src: look3, alt: "Deep rose draped gown" },
-  { src: look1, alt: "Chiffon dress in window light" },
-  { src: look4, alt: "Bridal gown under blossoms" },
-  { src: look2, alt: "Floral lace and pearl detail" },
-  { src: look5, alt: "Atelier mannequin" },
-  { src: look6, alt: "Cherry blossom still life" },
+  { src: cfw1, alt: "Collection" },
+  { src: img1, alt: "Collection" },
+  { src: ds1, alt: "Collection" },
+  { src: cfw2, alt: "Collection" },
+  { src: img3, alt: "Collection" },
+  { src: ds3, alt: "Collection" },
+  { src: cfw3, alt: "Collection" },
+  { src: img5, alt: "Collection" },
+  { src: ds5, alt: "Collection" },
+  { src: cfw5, alt: "Collection" },
+  { src: img7, alt: "Collection" },
+  { src: ds6, alt: "Collection" },
+  { src: cfw10, alt: "Collection" },
 ];
 
 export function getCollection(slug: string) {

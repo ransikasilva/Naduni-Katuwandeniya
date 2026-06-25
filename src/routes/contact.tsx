@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Naduni Katuwandeniya" },
-      { name: "description", content: "Contact the atelier of Naduni Katuwandeniya for bridal, couture, and press enquiries." },
+      { name: "description", content: "Contact Naduni Katuwandeniya for bridal, couture, and press enquiries." },
       { property: "og:title", content: "Contact — Naduni Katuwandeniya" },
       { property: "og:description", content: "Bridal, couture, and press enquiries." },
     ],
@@ -21,7 +21,7 @@ function ContactPage() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const body = `From: ${form.name} <${form.email}>\n\n${form.message}`;
-    window.location.href = `mailto:studio@naduni.atelier?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:hkn.udara@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`;
   }
 
   return (
@@ -32,27 +32,29 @@ function ContactPage() {
         <div>
           <p className="text-xs uppercase tracking-[0.32em] text-primary">Contact</p>
           <h1 className="mt-4 font-display text-5xl leading-[1.02] text-foreground sm:text-6xl">
-            Visit the <span className="italic">atelier</span>.
+            Get in <span className="italic">touch</span>.
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-            For bridal appointments, couture commissions, and press enquiries — write to the studio. Consultations are by appointment.
+            For bridal appointments, couture commissions, collaborations, design inquiries, and press enquiries — reach out to discuss your vision.
           </p>
 
           <dl className="mt-10 space-y-6 text-sm">
             <div>
-              <dt className="text-xs uppercase tracking-[0.22em] text-muted-foreground">Studio</dt>
-              <dd className="mt-2 font-display text-xl text-foreground">Colombo 07, Sri Lanka</dd>
-            </div>
-            <div>
               <dt className="text-xs uppercase tracking-[0.22em] text-muted-foreground">Email</dt>
               <dd className="mt-2">
-                <a href="mailto:studio@naduni.atelier" className="font-display text-xl text-primary hover:underline">studio@naduni.atelier</a>
+                <a href="mailto:hkn.udara@gmail.com" className="font-display text-xl text-primary hover:underline">hkn.udara@gmail.com</a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-xs uppercase tracking-[0.22em] text-muted-foreground">Phone</dt>
+              <dd className="mt-2">
+                <a href="tel:+94779327611" className="font-display text-xl text-primary hover:underline">+94 77 932 7611</a>
               </dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-[0.22em] text-muted-foreground">Instagram</dt>
               <dd className="mt-2">
-                <a href="https://instagram.com" className="font-display text-xl text-primary hover:underline">@naduni.katuwandeniya</a>
+                <a href="https://instagram.com/naduni.designs" target="_blank" rel="noopener noreferrer" className="font-display text-xl text-primary hover:underline">@naduni.designs</a>
               </dd>
             </div>
           </dl>

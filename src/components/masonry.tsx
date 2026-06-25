@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export function Masonry({ children }: { children: ReactNode }) {
   return (
-    <div className="columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5 [&>*]:break-inside-avoid">
+    <div className="grid grid-cols-2 gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {children}
     </div>
   );
