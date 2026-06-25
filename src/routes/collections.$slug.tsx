@@ -86,7 +86,7 @@ function CollectionDetail() {
         <p className="text-xs uppercase tracking-[0.32em] text-primary">The Looks</p>
         <div className="mt-10">
           <Masonry>
-            {collection.looks.map((l, i) => (
+            {collection.looks.map((l: { src: string; alt: string }, i: number) => (
               <img
                 key={i}
                 src={l.src}
