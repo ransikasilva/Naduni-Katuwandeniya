@@ -2,10 +2,10 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Masonry } from "@/components/masonry";
-import { collections, getCollection } from "@/lib/collections";
+import { collections, getCollection, type Collection } from "@/lib/collections";
 
 export const Route = createFileRoute("/collections/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { collection: Collection } => {
     const collection = getCollection(params.slug);
     if (!collection) throw notFound();
     return { collection };
